@@ -13,9 +13,23 @@ You can install the package via composer:
 composer require seanhayes-com/laravel5-probe-detection
 ```
 
-The package will automatically register itself.
+## Step 2: Configuration
 
-You can publish the migration with:
+Add the following to your `config/app.php` in the `providers` array:
+
+```
+SeanHayes\Probe\ProbeServiceProvider::class,
+Torann\GeoIP\GeoIPServiceProvider::class,
+```
+
+You should also add the following to the `aliases` array:
+
+```
+'Probe'     => SeanHayes\Probe\ProbeFacade::class,
+'GeoIP' 	=> Torann\GeoIP\GeoIPFacade::class,
+```
+
+You can then publish the migration with:
 ```bash
 php artisan vendor:publish --provider="SeanHayes\Probe\ProbeServiceProvider" --tag="migrations"
 ```
