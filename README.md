@@ -26,7 +26,7 @@ You should also add the following to the `aliases` array:
 
 ```php
 'Probe'     => SeanHayes\Probe\ProbeFacade::class,
-'GeoIP' 	=> Torann\GeoIP\GeoIPFacade::class,
+'GeoIP'     => Torann\GeoIP\GeoIPFacade::class,
 ```
 
 You can then publish the migration with:
