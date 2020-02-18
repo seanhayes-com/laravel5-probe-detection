@@ -1,5 +1,5 @@
 # Laravel 5 Probe Detection
-A package to log known website probing attacks
+Log and ban known website probing attacks and eliminate wasted site resources
 
 ## Minimum Requirements
 
